@@ -14,9 +14,12 @@ int func(int number) {
     if(number < 0) {
         x=number - 2;
     }
+    if(number == 0){
+        x=10;
+    }
     return x;
 }
 
 void main() {
-    print(func(10));
+    print(func(0));
 }
