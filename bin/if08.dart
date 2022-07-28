@@ -11,4 +11,27 @@
     Returns:
         string: the message to print */
 
-void main() {}
+String func(int y) {
+  String x = '';
+  if (y > 0) {
+    if (y % 2 == 0) {
+      x = "two-digit even number";
+    }
+    if (y % 2 == 1) {
+      x = "two-digit odd number";
+    }
+  }
+  if (y > 0) {
+    if (y % 2 == 0) {
+      x = "three-digit even number";
+    }
+    if (y % 2 == 1) {
+      x = "three-digit odd number";
+    }
+  }
+  return x;
+}
+
+void main() {
+  print(func(678));
+}
