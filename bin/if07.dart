@@ -11,4 +11,29 @@
         a: integer
     Returns:
         string: the message to print */
-void main() {}
+String func(int a) {
+  String x = '';
+  if (a > 0) {
+    if (a % 2 == 0) {
+      x = "positive even number";
+    }
+    if (a > 0) {
+      if (a % 2 == 1) {
+        x = "positive odd number";
+      }
+    }
+  }
+  if (a < 0) {
+    if (a % 2 == 0) {
+      x = "negative even number";
+    }
+    if (a % 2 == 1) {
+      x = "negative odd number";
+    }
+  }
+  return x;
+}
+
+void main() {
+  print(func(-7));
+}
